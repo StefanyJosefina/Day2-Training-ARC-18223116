@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GlowUp Essentials - Your Beauty Haven</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div class="logo">
+                <i class="fas fa-spa"></i>
+                <h1>GlowUp Essentials</h1>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="#home" class="active">Home</a></li>
+                    <li><a href="#products">Products</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </nav>
+            <div class="mobile-menu-btn">
+                <i class="fas fa-bars"></i>
+            </div>
+        </div>
+    </header>
+
+    <section id="home" class="hero">
+        <div class="container">
+            <div class="hero-content">
+                <h1>Discover Your Natural Radiance</h1>
+                <p>Indulge in our curated collection of premium beauty products</p>
+                <a href="#products" class="btn-primary">Shop Now</a>
+            </div>
+        </div>
+    </section>
+
+    <section id="products" class="products">
+        <div class="container">
+            <div class="section-header">
+                <h2>Featured Products</h2>
+                <div class="sort-container">
+                    <label for="sort">Sort by:</label>
+                    <select id="sort">
+                        <option value="price">Price (Low to High)</option>
+                        <option value="rating">Rating (High to Low)</option>
+                    </select>
+                </div>
+            </div>
+            <div class="loading">
+                <div class="spinner"></div>
+            </div>
+            <div class="product-grid" id="product-grid">
+                <!-- Products will be loaded here by JavaScript -->
+            </div>
+        </div>
+    </section>
+
+    <section id="about" class="about">
+        <div class="container">
+            <h2>About GlowUp Essentials</h2>
+            <div class="about-content">
+                <div class="about-image">
+                    <img src="https://images.unsplash.com/photo-1596755094514-f87e34085b2c?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=776&q=80" alt="Beauty Products">
+                </div>
+                <div class="about-text">
+                    <p>At GlowUp Essentials, we believe that true beauty comes from within, and our products are designed to enhance your natural radiance. Founded in 2020, our mission is to provide high-quality, cruelty-free beauty products that cater to all skin types and tones.</p>
+                    <p>Our team of beauty experts carefully curates each product in our collection, ensuring that we offer only the best in skincare, makeup, and beauty tools. We're committed to using clean, sustainable ingredients and eco-friendly packaging to minimize our environmental impact.</p>
+                    <div class="values">
+                        <div class="value-item">
+                            <i class="fas fa-heart"></i>
+                            <h3>Cruelty-Free</h3>
+                        </div>
+                        <div class="value-item">
+                            <i class="fas fa-leaf"></i>
+                            <h3>Natural Ingredients</h3>
+                        </div>
+                        <div class="value-item">
+                            <i class="fas fa-globe"></i>
+                            <h3>Eco-Friendly</h3>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact" class="contact">
+        <div class="container">
+            <h2>Get in Touch</h2>
+            <div class="contact-content">
+                <div class="contact-form">
+                    <form id="contact-form">
+                        <div class="form-group">
+                            <label for="name">Your Name</label>
+                            <input type="text" id="name" name="name" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="email">Your Email</label>
+                            <input type="email" id="email" name="email" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="message">Your Message</label>
+                            <textarea id="message" name="message" rows="5" required></textarea>
+                        </div>
+                        <button type="submit" class="btn-primary">Send Message</button>
+                    </form>
+                </div>
+                <div class="contact-info">
+                    <div class="info-item">
+                        <i class="fas fa-map-marker-alt"></i>
+                        <p>123 Beauty Lane, Glow City, GL 12345</p>
+                    </div>
+                    <div class="info-item">
+                        <i class="fas fa-phone"></i>
+                        <p>(123) 456-7890</p>
+                    </div>
+                    <div class="info-item">
+                        <i class="fas fa-envelope"></i>
+                        <p>hello@glowupessentials.com</p>
+                    </div>
+                    <div class="social-icons">
+                        <a href="#"><i class="fab fa-facebook"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-pinterest"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-logo">
+                    <i class="fas fa-spa"></i>
+                    <h2>GlowUp Essentials</h2>
+                </div>
+                <p>&copy; 2023 GlowUp Essentials. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
